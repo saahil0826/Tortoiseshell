@@ -43,13 +43,22 @@ header .logo{
 }
 
 
-nav span{
+nav ul{
+
+display: flex;
+justify-content: space-between;
+}
+nav ul li{
   color: white;
   margin-right: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 font-family: "Helvetica";
 text-align: right;
+}
+
+.small{
+display: flex;
 }
 
 .main-banner{
@@ -64,11 +73,11 @@ height: 30rem;
   background-color: white;
   position: absolute;
 padding: 1.5rem 5rem;
-top: 10em;
+top: 10rem;
 margin-left: 350px;
 margin-top: 2rem;
-
 }
+
 .headline h1{
   font-family: "Helvetica";
   font-size: 2rem;
@@ -85,22 +94,32 @@ margin-bottom: 3rem;
 
 
 .pics .paper{
-  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3.5rem;
 }
 
 
 .pics .ruler{
-}
-.pics .ruler span{
-  margin-top: 10px;
-}
-.pics .truck{
-    width: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 5rem;
 }
 
-.product-image{
-  width: 5rem;
-  }
+#text{
+  text-align: center;
+  margin-left: 50px;
+}
+
+.pics .truck{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 5rem;
+}
+
 
   .other{
     display: flex;
@@ -138,4 +157,127 @@ max-width: 900px;
 
 footer img{
   margin-right: 1rem;
+}
+
+nav li{
+  text-decoration: none;
+  color: white;
+  list-style: none;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .small {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .small {
+    display: none;
+  }
+
+header{
+  max-width:100%;
+  top:0;
+}
+
+.main-banner{
+  background-position: left;
+  height: 22rem;
+}
+
+
+.headline{
+  background-color: white;
+  position: absolute;
+padding: 0.75rem 4rem;
+top: 5rem;
+margin-left: 450px;
+margin-top: 4rem;
+margin-right: 2rem;
+}
+
+.headline h1{
+  font-size: 1.33rem;
+}
+
+  }
+
+
+@media only screen and (max-width: 470px) {
+  .small {
+    display: block;
+    text-align: center;
+  }
+
+  .logo span {
+    display: none;
+  }
+  nav .container {
+    display: none;
+  }
+
+  .main-banner{
+    background-position: 20%;
+    height: 17rem;
+
+  }
+
+  .headline{
+    background-color: white;
+    position: absolute;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  top: 9rem;
+  width: 100%;
+  z-index: 1;
+
+  }
+
+  .headline h1{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+.pics{
+   flex-direction:column;
+   justify-content: center;
+align-items:center;
+   margin-bottom: 3.77rem;
+   margin-top: 3.77rem;
+}
+
+#text{
+  font-family: "Helvetica";
+  font-size: .77rem;
+}
+
+.pics .paper{
+  margin-bottom: 1.54rem;
+}
+.pics .ruler{
+  margin-bottom: 1.54rem;
+}
+
+.other{
+display: block;
+justify-content: center;
+align-items:center;
+}
+
+.info .title{
+  width: 100%;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#foo{
+  display: none;
+}
+
 }
