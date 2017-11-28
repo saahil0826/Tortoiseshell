@@ -85,47 +85,33 @@ margin-top: 2rem;
   font-weight: bold;
 }
 
-.pics{
+
+
+.supporting{
   margin-top: 3rem;
 margin-bottom: 3rem;
   display: flex;
   justify-content: space-around;
+
 }
 
 
-.product-image {
-width: 1rem;
-margin-bottom: 1rem;
-}
-
-.pics .paper{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-}
-
-
-.paper .product-image{
-    width: 3.5rem;
-}
-
-
-.pics .ruler{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-    text-align: center;
-}
-
-
-.pics .truck{
+.service {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
       text-align: center;
-
+        height: 8rem;
+        width:5rem;
+        align-items: center;
+    
 }
+
+.service img {
+   width: 5rem;
+   margin-bottom: 0.5rem;
+}
+
 
 
   .other{
@@ -240,12 +226,16 @@ margin-right: 2rem;
     text-align: center;
   }
 
-.pics{
+.supporting{
    flex-direction:column;
    justify-content: center;
-align-items:center;
+  align-items:center;
    margin-bottom: 3.77rem;
    margin-top: 3.77rem;
+}
+
+.service{
+  margin-bottom: 1.54rem;
 }
 
 #text{
@@ -255,12 +245,6 @@ align-items:center;
 }
 
 
-.pics .paper{
-  margin-bottom: 1.54rem;
-}
-.pics .ruler{
-  margin-bottom: 1.54rem;
-}
 
 .other{
 display: block;
