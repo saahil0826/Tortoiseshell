@@ -98,17 +98,24 @@ margin-left: 350px;
 .other{
   display: flex;
   justify-content: space-around;
+
 }
 
-.info{
-  width:35%;
-  margin-bottom: 5rem;
+.part1{
+  display: block;
+
+    width: 50%;
 }
 
+.part2{
+  display: block;
+
+    width: 50%;
+}
 
 .title{
-  display: block;
-  width: 10rem;
+display: flex;
+  justify-content: center;
   background-color: cadetblue;
   margin-bottom: 1rem;
   font-family: "Helvetica";
@@ -117,7 +124,20 @@ margin-left: 350px;
   color: white;
   padding: 0.5rem 1.25rem;
   width:60%;
+  height: 20px;
 }
+
+
+.info{
+  width:35%;
+  margin-bottom: 5rem;
+}
+
+.info span{
+  display: flex;
+align-self: center;
+}
+
 
 footer{
   padding-top: 4rem;
@@ -166,6 +186,7 @@ footer img{
   .headline h1{
     font-size: 1.33rem;
   }
+
 }
 
 @media only screen and (max-width: 470px) {
